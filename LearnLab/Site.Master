@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="LearnLab.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Lab</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+       <div class="header">
+           <div style="display:inline-block">
+        <label class ="headerlabel">LEARN LAB</label>
+        AN EASY WAY TO DISCOVER LOGICAL KNOWLEDGE
+               </div>
+        <asp:LinkButton ID="homebtn" runat="server" CssClass="homebtn" PostBackUrl="~/" Text="HOME"/>
+        
+    </div>
+    <div class="subheader">
+        <label class ="shlbl">WELCOME TO LEARN LAB!</label>
+        <br />
+        <label class ="shlbl2">your physics calculator</label>
+        <br />
+        <div class="content">
+            <div class ="Contents">
+        <label>Physics, science that deals with the structure of matter and the interactions between the fundamental constituents of the 
+            observable universe. In the broadest sense, physics (from the Greek physikos) is concerned with all aspects of nature on both 
+            the macroscopic and submicroscopic levels. Its scope of study encompasses not only the behaviour of objects under the action of 
+            given forces but also the nature and origin of gravitational, electromagnetic, and nuclear force fields. Its ultimate objective is 
+            the formulation of a few comprehensive principles that bring together and explain all such disparate phenomena.</label>
+          </div>
+        <img src="Content/Images/logo.png" class="logo"/>
+        </div>
+    </div>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <div class="footer">
+             <label class ="footerheader">ABOUT US</label><br />
+                <label class ="footercontents">Physics, science that deals with the structure of matter and the interactions between the fundamental constituents of the 
+                observable universe. In the broadest sense, physics (from the Greek physikos) is concerned with all aspects of nature on both 
+            the macroscopic and submicroscopic levels.</label><br />
+            <div class="footerlabel">
+            <label >A CAPSTONE PROJECT SCHOOL YEAR 2020-2021</label><br />
+                </div>
+        </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

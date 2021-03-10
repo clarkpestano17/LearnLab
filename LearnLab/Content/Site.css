@@ -1,0 +1,162 @@
+﻿body {
+    color:black;
+     font-family:Verdana;
+    font-size:8px; 
+}
+.header{
+    font-family:Verdana;
+    font-size:12px;
+    font-weight: bold;
+    color:black;
+    background-color:darkblue;
+    display:flex;
+    width: 100%;
+   justify-content:space-between;
+    
+}
+label{
+    display:inline-block;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+.description{
+    
+    font-size:14px;
+    font-weight:100;
+    text-align:justify;
+    text-indent:30px;
+}
+.title{
+    font-size:16px;
+    font-weight:bold;
+    padding-bottom:10px;
+}
+.headerlabel
+{
+    font-family:Verdana;
+    font-size:22px;
+    font-weight: bold;
+    color:white;
+    background-color:darkblue;
+    display:inline-block;
+    padding:5px;
+    padding-right: 20px;
+}
+.subheader{
+    background-image:url("Images/BACKGROUND.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 170px;
+    display:block;
+    padding-left:5px;
+    height:200px;
+}
+.shlbl{
+    font-family:Verdana;
+    font-size:32px;
+    font-weight: bold;
+}
+.shlbl2{
+     font-family:Arial;
+    font-size:20px;
+    font-weight: bold;
+    
+}
+.content{
+    width:100%;
+    text-align:justify;
+    display:flex;
+    justify-content:space-between;
+}
+.logo{
+    height:120px;
+    width: 160px;
+    background-color:transparent;
+    display:inline-block;
+    vertical-align:baseline;
+    padding-right: 40px;
+}
+.homebtn{
+     vertical-align:baseline;
+      padding-right: 40px;
+      padding-top:10px;
+      font-family:Verdana;
+      color:white;
+      font-size: 16px;
+}
+.Contents{
+    width:60%
+}
+.footerheader {
+    
+    font-family:Verdana;
+    font-size:22px;
+    font-weight: bold;
+     color:white;
+     padding:5px;
+}
+.footerlabel{    
+    font-family:Verdana;
+    font-size:12px;
+    font-weight: bold; 
+    text-align:center;
+    padding:10px;
+    padding-top:20px;
+}
+.footercontents{
+    text-align:justify;
+   font-family:Verdana;
+    font-size:11px;
+    width:95%;
+    padding-bottom:20px;
+    padding-left:5px;
+}
+.footer{
+    background-color:darkblue;
+    color:white;
+   
+    padding-left:5px;
+}
+.topicArea{
+    text-align:center;
+    padding:5px;
+}
+
+.topicbtn{
+    height: 100px;
+    width:180px;
+    align-content:center;
+    padding-right:20px;
+    font-family:Verdana;
+    font-size:16px;
+    font-weight:bold;
+}
+.given{
+    
+    font-size:12px;
+    
+}
+.formula{
+    width:270px;
+    height:80px;
+}
+.formula2{
+     width:270px;
+    height:150px;
+}
+.errorlabel{
+    font-family:Verdana;
+    font-size:13px;
+    color:red;
+}
+.formula3{
+     width:200px;
+    height:80px;
+}
+.formula4{
+     width:250px;
+    height:120px;
+}
+.formula5{
+     width:340px;
+    height:120px;
+}
